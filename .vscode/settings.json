@@ -1,0 +1,10 @@
+{
+  "i18n-ally.localesPaths": [
+    "node_modules1/axe-core/locales",
+    "node_modules1/eslint/messages",
+    "node_modules1/@mui/material/locale",
+    "node_modules1/@mui/material/legacy/locale",
+    "node_modules1/@mui/material/modern/locale",
+    "node_modules1/@mui/material/node/locale"
+  ]
+}

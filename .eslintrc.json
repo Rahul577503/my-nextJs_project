@@ -1,0 +1,99 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "quotes": ["error", "single"],
+    "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+    "no-trailing-spaces": "error",
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "line": {
+          "markers": ["/"],
+          "exceptions": ["-", "+"]
+        },
+        "block": {
+          "markers": ["!"],
+          "exceptions": ["*"],
+          "balanced": true
+        }
+      }
+    ],
+    "brace-style": ["error", "1tbs"],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "comma-style": ["error", "last"],
+    "camelcase": ["error"],
+    "sort-vars": ["error"],
+    "switch-colon-spacing": "error",
+    "default-case": "error",
+    "default-case-last": "error",
+    "eqeqeq": ["error", "smart"],
+    "complexity": ["error"],
+    "no-unreachable": "error",
+    "no-empty": "error",
+    "no-duplicate-case": "error",
+    "no-dupe-keys": "error",
+    "no-dupe-else-if": "error",
+    "no-dupe-args": "error",
+    "for-direction": "error",
+    "no-var": "error",
+    "no-irregular-whitespace": [
+      "error",
+      {
+        "skipTemplates": true,
+        "skipRegExps": true,
+        "skipComments": true,
+        "skipStrings": true
+      }
+    ],
+    "react/react-in-jsx-scope": 0,
+    "react/display-name": 0,
+    "react/prop-types": 0,
+    "sort-imports": [
+      "error",
+      { "allowSeparatedGroups": true, "ignoreDeclarationSort": true }
+    ],
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/explicit-member-accessibility": 0,
+    "@typescript-eslint/indent": 0,
+    "@typescript-eslint/member-delimiter-style": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/no-unused-vars": [
+      2,
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "no-console": [
+      2,
+      {
+        "allow": ["warn", "error"]
+      }
+    ]
+  }
+}

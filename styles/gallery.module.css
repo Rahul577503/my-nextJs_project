@@ -1,0 +1,16 @@
+.prevBtn, .nextBtn{
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  background: #fff;
+  border-radius: 100%;
+}
+.prevBtn{
+  left: 0px;
+}
+.nextBtn{
+  right: 0px;
+}
+.prevBtn:hover, .nextBtn:hover{
+  background: #fff;
+}

@@ -1,4 +1,4 @@
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
@@ -21,7 +21,7 @@ import Drawer from '@mui/material/Drawer'
 import Footer from './Footer'
 import { navItems, site } from '@/constants/common'
 
-const EnquiryModal = dynamic(() => import('./EnquiryModel'), { ssr: false })
+// const EnquiryModal = dynamic(() => import('./EnquiryModel'), { ssr: false })
 
 type Props = {
   children?: ReactNode
@@ -154,7 +154,7 @@ const Layout = ({ children }: Props): JSX.Element => {
           <Toolbar />
           {children}
           <Footer />
-          <EnquiryModal />
+          {/* <EnquiryModal /> */}
         </Box>
       </Box>
     </>

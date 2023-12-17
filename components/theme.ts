@@ -43,9 +43,6 @@ const theme = createTheme({
     error: {
       main: red.A400,
     },
-    customColor: {
-      main: '#333',
-    },
   },
   typography: {
     fontFamily: roboto.style.fontFamily,

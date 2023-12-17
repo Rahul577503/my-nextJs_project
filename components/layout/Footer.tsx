@@ -124,12 +124,12 @@ export default function Footer(): JSX.Element {
           py: 3,
           px: 2,
           backgroundColor: (theme) =>
-            theme.palette.mode === 'dark'
+            theme.palette.mode === 'light'
               ? theme.palette.grey[400]
               : theme.palette.grey[900],
         }}
       >
-        <Copyright style={{color:'#fff'}}/>
+        <Copyright/>
       </Box>
     </>
   )

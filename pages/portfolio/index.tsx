@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { ChangeEvent, useState } from 'react'
 import Page from '@/components/wrappers/Page'
 import Layout from '@/components/layout'
 import { portfolioMetaData } from '@/constants/metaData'
@@ -7,30 +7,30 @@ import Image from 'next/image'
 import Head from 'next/head'
 import {
   AppBar,
-  Tabs,
-  Tab,
-  Container,
+  Box,
   Card,
+  Container,
   Grid,
   IconButton,
   Modal,
-  Box,
+  Tab,
+  Tabs,
 } from '@mui/material'
 import { portfolios } from '@/constants/portfolio'
 import CenterFocusStrongIcon from '@mui/icons-material/CenterFocusStrong'
 import Link from 'next/link'
 
-const Portfolio: React.FC<Props> = (): JSX.Element => {
-  const [value, setValue] = useState(0)
-  const [open, setOpen] = useState(false)
+export default function Portfolio(): JSX.Element {
+  const [value, setValue] = useState<number>(0)
+  const [open, setOpen] = useState<boolean>(false)
   const [selectedImage, setSelectedImage] = useState(false)
   const [selectedCard, setSelectedCard] = useState<IPortfolio | null>(null)
 
   const [selectedCategory, setSelectedCategory] = useState('ALL')
 
-  const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+  const handleChange = (event: ChangeEvent<object>, newValue: number) => {
     setValue(newValue)
-    const categories = [
+    const categories: string[] = [
       'ALL',
       'WEB DESIGN',
       'ECOMMERCE',

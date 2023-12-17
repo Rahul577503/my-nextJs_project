@@ -5,13 +5,14 @@ interface Prop extends ContainerProps {
 }
 
 export default function Page({
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   maxWidth,
   children,
   ...rest
 }: Prop): JSX.Element {
   return (
     <Container
-      maxWidth={maxWidth || 'xlg'}
+    maxWidth = 'xl'
       sx={{
         mt: 2,
         mb: 2,

@@ -3,13 +3,6 @@ import { useRouter } from 'next/router'
 import Button from '@mui/material/Button'
 import TextField from '@mui/material/TextField'
 import TelegramIcon from '@mui/icons-material/Telegram'
-import Select, { SelectChangeEvent } from '@mui/material/Select'
-import Checkbox from '@mui/material/Checkbox'
-import OutlinedInput from '@mui/material/OutlinedInput'
-import InputLabel from '@mui/material/InputLabel'
-import MenuItem from '@mui/material/MenuItem'
-import FormControl from '@mui/material/FormControl'
-import ListItemText from '@mui/material/ListItemText'
 import Grid from '@mui/material/Grid'
 import Box from '@mui/material/Box'
 import Snackbar from '@mui/material/Snackbar'
@@ -19,7 +12,6 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 
 import SubHeading from '@/components/wrappers/headings/SubHeading'
 import useLocalStorage from '@/hooks/useLocalStorage'
-import { courses } from '@/constants/courses'
 
 interface IFormInputs {
   firstName: string
@@ -30,17 +22,6 @@ interface IFormInputs {
   qualification?: string
   institute?: string
   courses?: string[]
-}
-
-const ITEM_HEIGHT = 48
-const ITEM_PADDING_TOP = 8
-const MenuProps = {
-  PaperProps: {
-    style: {
-      maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-      width: 250,
-    },
-  },
 }
 
 function SlideTransition(props: SlideProps) {
@@ -78,18 +59,7 @@ export default function Enquiry({
   })
   const [openSnackbar, setOpenSnackbar] = useState<boolean>(false)
   const [, setUser] = useLocalStorage('enquiryUser', {})
-  const [coursesInterested, setCoursesInterested] = useState<string[]>([])
   const [isProcessing, setIsProcessing] = useState(false)
-
-  const handleChange = (event: SelectChangeEvent<typeof coursesInterested>) => {
-    const {
-      target: { value },
-    } = event
-    setCoursesInterested(
-      // On autofill we get a stringified value.
-      typeof value === 'string' ? value.split(',') : value
-    )
-  }
 
   const handleClose = () => {
     setOpenSnackbar(false)
@@ -111,7 +81,7 @@ export default function Enquiry({
     try {
       const res = await fetch('/api/enquiry', {
         method: 'POST',
-        body: JSON.stringify({ ...data, ...{ courses: coursesInterested } }),
+        body: JSON.stringify(data),
       })
       const resJson = await res.json()
       if (resJson.status === 200) {
@@ -120,15 +90,9 @@ export default function Enquiry({
           type: 'success',
           text: 'Enquiry has been sent successfully!',
         })
-        setUser({ ...data, ...{ courses: coursesInterested } })
+        setUser(data)
         setOpenSnackbar(true)
         if (
-          queryString &&
-          queryString?.course !== undefined &&
-          queryString?.course !== ''
-        ) {
-          setTimeout(() => router.push('/academy'), 3000)
-        } else if (
           queryString &&
           queryString?.service !== undefined &&
           queryString?.service !== ''
@@ -136,7 +100,7 @@ export default function Enquiry({
           setTimeout(() => router.push('/services'), 3000)
         }
         setIsProcessing(false)
-        if(onSubmit) {
+        if (onSubmit) {
           setTimeout(() => {
             onSubmit()
           }, 3500)
@@ -193,7 +157,11 @@ export default function Enquiry({
         </Alert>
       </Snackbar>
 
-      <form noValidate autoComplete="off" onSubmit={handleSubmit(handleSubmitFun)}>
+      <form
+        noValidate
+        autoComplete="off"
+        onSubmit={handleSubmit(handleSubmitFun)}
+      >
         <Grid container spacing={spacing ?? 4}>
           <Grid item xs={12} sm={6}>
             <TextField
@@ -324,36 +292,6 @@ export default function Enquiry({
                     },
                   })}
                 />
-              </Grid>
-              <Grid item xs={12}>
-                <FormControl sx={{ width: '100%' }}>
-                  <InputLabel id="coursesLabel">
-                    Courses Interested in
-                  </InputLabel>
-                  <Select
-                    labelId="coursesLabel"
-                    multiple
-                    value={coursesInterested}
-                    onChange={handleChange}
-                    input={<OutlinedInput label="Courses Interested in" />}
-                    renderValue={(selected) => selected.join(', ')}
-                    MenuProps={MenuProps}
-                  >
-                    {courses?.map((course) => {
-                      if (course.status !== 1) return null
-                      return (
-                        <MenuItem key={course.id} value={course.title}>
-                          <Checkbox
-                            checked={
-                              coursesInterested.indexOf(course.title) > -1
-                            }
-                          />
-                          <ListItemText primary={course.title} />
-                        </MenuItem>
-                      )
-                    })}
-                  </Select>
-                </FormControl>
               </Grid>
             </>
           ) : (

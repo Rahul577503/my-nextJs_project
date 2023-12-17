@@ -23,7 +23,7 @@ import Link from 'next/link'
 export default function Portfolio(): JSX.Element {
   const [value, setValue] = useState<number>(0)
   const [open, setOpen] = useState<boolean>(false)
-  const [selectedImage, setSelectedImage] = useState(false)
+  const [selectedImage, setSelectedImage] = useState<string>('')
   const [selectedCard, setSelectedCard] = useState<IPortfolio | null>(null)
 
   const [selectedCategory, setSelectedCategory] = useState('ALL')
@@ -54,13 +54,17 @@ export default function Portfolio(): JSX.Element {
 
   const handleCloseModal = () => {
     setOpen(false)
+    setSelectedImage('')
   }
   const handleIconButtonClick = (
     event: React.MouseEvent<HTMLButtonElement>
   ) => {
     event.stopPropagation()
     const image = event.currentTarget.getAttribute('data-image') || ''
-    handleOpenModal(image)
+    if (image) {
+      setSelectedImage(image)
+      handleOpenModal(image)
+    }
   }
 
   return (
@@ -169,18 +173,17 @@ export default function Portfolio(): JSX.Element {
           open={open}
           onClose={handleCloseModal}
           style={{
-            maxWidth: '80vw',
-            maxHeight: '80vh',
+            position:'absolute',
+            top:'10%',
+            left:'10%',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            textAlign: 'center',
-            backgroundColor: '#fff',
-            padding: '20px',
-            borderRadius: '10px',
+            overflow: 'scroll',
           }}
         >
-          <Box onClick={handleCloseModal}>
+          <Box
+            onClick={handleCloseModal}>
             <div onClick={(e) => e.stopPropagation()}>
               <Image
                 src={selectedImage}

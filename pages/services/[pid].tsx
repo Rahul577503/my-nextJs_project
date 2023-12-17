@@ -1,9 +1,6 @@
 import React, { ReactElement } from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
-import Button from '@mui/material/Button'
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next/types'
-import TelegramIcon from '@mui/icons-material/Telegram'
 
 import Layout from '@/components/layout'
 import Background from '@/components/wrappers/Background'
@@ -77,8 +74,8 @@ ServiceDetails.getLayout = function getLayout(page: ReactElement) {
         />
 
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@faciomaxillary" />
-        <meta name="twitter:creator" content="@faciomaxillary" />
+        <meta name="twitter:site" content="@zokoworld" />
+        <meta name="twitter:creator" content="@fzokoworld" />
       </Head>
       {page}
     </Layout>

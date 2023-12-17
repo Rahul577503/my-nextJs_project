@@ -20,7 +20,7 @@ export default function Copyright(props: Prop): JSX.Element {
         <Link
           color="inherit"
           underline="hover"
-          href="https://faciomaxillary-dentalcare.com/"
+          href="https://zokoworld.com/"
         >
           {site.title}
         </Link>{'. '}

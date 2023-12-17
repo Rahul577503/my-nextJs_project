@@ -9,11 +9,11 @@ import IconButton from '@mui/material/IconButton'
 import MailOutlinedIcon from '@mui/icons-material/MailOutlined'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight'
 
 import Copyright from './Copyright'
 import { footerLinks } from '@/constants/common'
 import H3 from '@/components/wrappers/headings/H3'
-
 
 export default function Footer(): JSX.Element {
   return (
@@ -29,13 +29,13 @@ export default function Footer(): JSX.Element {
               : theme.palette.grey[800],
         }}
       >
-        <Container maxWidth="md">
+        <Container maxWidth="lg">
           <Grid container spacing={1} alignItems="stretch">
             <Grid item lg={12} md={12} sm={12} xs={12}>
               <Grid container spacing={1} alignItems="stretch">
                 {footerLinks?.map((links, index) => {
                   return (
-                    <Grid item lg={4} md={4} sm={6} xs={12} key={index}>
+                    <Grid item lg={3} md={3} sm={6} xs={12} key={index} >
                       <H3 variant="h6">{links.section}</H3>
                       {links.links.map((link, index2) => {
                         if (Array.isArray(link.title)) {
@@ -77,6 +77,12 @@ export default function Footer(): JSX.Element {
                                   </Typography>
                                 )
                               })}
+                              {index2 < links.links.length - 1 && (
+                                <KeyboardArrowRightIcon
+                                  fontSize="small"
+                                  style={{ color: '#fff' }}
+                                />
+                              )}
                             </React.Fragment>
                           )
                         }
@@ -118,12 +124,12 @@ export default function Footer(): JSX.Element {
           py: 3,
           px: 2,
           backgroundColor: (theme) =>
-            theme.palette.mode === 'light'
+            theme.palette.mode === 'dark'
               ? theme.palette.grey[400]
               : theme.palette.grey[900],
         }}
       >
-        <Copyright />
+        <Copyright style={{color:'#fff'}}/>
       </Box>
     </>
   )

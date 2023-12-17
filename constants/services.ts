@@ -73,6 +73,7 @@ export const services: IServices[] = [
   {
     id: '2',
     status: 1,
+    featured: 1,
     slug: 'Comprehensive Website Development Solutions Tailored to Your Business',
     image: '/images/services/website-development.jpg',
     title:
@@ -93,7 +94,7 @@ export const services: IServices[] = [
       {
         title: 'Customized Development Strategies',
         content:
-          "Our approach to website development begins with understanding your unique business needs, target audience, and long-term goals. We craft custom development strategies tailored to meet your specific requirements, ensuring that your website stands out in today's competitive digital landscape.",
+          'Our approach to website development begins with understanding your unique business needs, target audience, and long-term goals. We craft custom development strategies tailored to meet your specific requirements, ensuring that your website stands out in today\'s competitive digital landscape.',
       },
       {
         title: 'Expertise Across Platforms and Technologies',
@@ -103,7 +104,7 @@ export const services: IServices[] = [
       {
         title: 'Scalable and Future-Proof Solutions',
         content:
-          "We don't just build for the present; we future-proof your website. Our development process focuses on scalability, ensuring that your website can adapt and grow seamlessly as your business expands.",
+          'We don\'t just build for the present; we future-proof your website. Our development process focuses on scalability, ensuring that your website can adapt and grow seamlessly as your business expands.',
       },
       {
         title: 'Agile Development Methodology',
@@ -118,7 +119,7 @@ export const services: IServices[] = [
       {
         title: 'Integration and Functionality',
         content:
-          "Beyond aesthetics, we prioritize functionality. Whether it's integrating third-party tools, creating user-friendly interfaces, or developing complex functionalities, we ensure that your website delivers an exceptional user experience.",
+          'Beyond aesthetics, we prioritize functionality. Whether it\'s integrating third-party tools, creating user-friendly interfaces, or developing complex functionalities, we ensure that your website delivers an exceptional user experience.',
       },
       {
         title: 'Transparent Communication and Collaboration',
@@ -128,12 +129,12 @@ export const services: IServices[] = [
       {
         title: 'Our Portfolio Highlights Our Expertise',
         content:
-          "Explore our portfolio to see the diverse range of websites and applications we've developed. Our success stories showcase our commitment to excellence and innovation in the world of website development.",
+          'Explore our portfolio to see the diverse range of websites and applications we\'ve developed. Our success stories showcase our commitment to excellence and innovation in the world of website development.',
       },
       {
         title: 'Dedication to Your Website Aspirations',
         content:
-          "At “Zoko World”, we're dedicated to turning your website aspirations into reality. Let's collaborate and build a website that propels your business forward.",
+          'At “Zoko World”, we\'re dedicated to turning your website aspirations into reality. Let\'s collaborate and build a website that propels your business forward.',
       },
       {
         title: 'Ready to Elevate Your Online Presence?',
@@ -146,6 +147,7 @@ export const services: IServices[] = [
   {
     id: '3',
     status: 1,
+    featured: 1,
     slug: 'Crafting Innovative Mobile Solutions for Your Business Growth',
     image: '/images/services/application-development.jpg',
     title: 'Crafting Innovative Mobile Solutions for Your Business Growth',
@@ -169,7 +171,7 @@ export const services: IServices[] = [
       {
         title: 'Platform Expertise',
         content:
-          "Our team of experienced developers is proficient in native and cross-platform development technologies. Whether it's native iOS development with Swift, Android with Kotlin, or cross-platform solutions like React Native or Flutter, we choose the most suitable technology stack to deliver exceptional results.",
+          'Our team of experienced developers is proficient in native and cross-platform development technologies. Whether it\'s native iOS development with Swift, Android with Kotlin, or cross-platform solutions like React Native or Flutter, we choose the most suitable technology stack to deliver exceptional results.',
       },
       {
         title: 'User-Centric Design',
@@ -199,7 +201,7 @@ export const services: IServices[] = [
       {
         title: 'Our Success Stories Speak Volumes',
         content:
-          "Explore our portfolio to see the diverse range of mobile apps we've developed. From startups to enterprises, our success stories highlight our commitment to excellence and innovation in the mobile app development landscape. Ready to bring your app idea to life? Contact us today for a consultation or to discuss your mobile app project.",
+          'Explore our portfolio to see the diverse range of mobile apps we have developed. From startups to enterprises, our success stories highlight our commitment to excellence and innovation in the mobile app development landscape. Ready to bring your app idea to life? Contact us today for a consultation or to discuss your mobile app project.',
       },
     ],
     gallery: [],
@@ -231,7 +233,7 @@ export const services: IServices[] = [
       {
         title: 'Choosing the Right Domain',
         content:
-          "Your domain name is more than just an address; it's your brand's identity in the digital realm. Our experts assist you in selecting the ideal domain name that reflects your brand, is easy to remember, and resonates with your audience.",
+          'Your domain name is more than just an address; it\'s your brand\'s identity in the digital realm. Our experts assist you in selecting the ideal domain name that reflects your brand, is easy to remember, and resonates with your audience.',
       },
       {
         title: 'Wide Range of Extensions',
@@ -266,7 +268,7 @@ export const services: IServices[] = [
       {
         title: 'Partnering in Your Digital Journey',
         content:
-          "At “Zoko World”, we're committed to being your partner in establishing and maintaining your online identity. Your domain is the cornerstone of your online presence, and we're here to ensure it's a strong and reliable foundation for your business growth.",
+          'At “Zoko World”, we\'re committed to being your partner in establishing and maintaining your online identity. Your domain is the cornerstone of your online presence, and we\'re here to ensure it\'s a strong and reliable foundation for your business growth.',
       },
       {
         title: 'Ready to Claim Your Online Address?',
@@ -329,7 +331,7 @@ export const services: IServices[] = [
       {
         title: '24/7 Technical Support',
         content:
-          "Our dedicated support team is available 24/7 to address any technical queries, troubleshooting needs, or assistance required with your hosting services. We're committed to ensuring a smooth and hassle-free hosting experience for our clients.",
+          'Our dedicated support team is available 24/7 to address any technical queries, troubleshooting needs, or assistance required with your hosting services. We\'re committed to ensuring a smooth and hassle-free hosting experience for our clients.',
       },
       {
         title: 'Transparent Pricing and Add-Ons',
@@ -339,7 +341,7 @@ export const services: IServices[] = [
       {
         title: 'Your Reliable Hosting Partner',
         content:
-          "At “Zoko World”, we're not just a hosting service provider; we're your reliable hosting partner dedicated to supporting your online journey. Trust us to provide the hosting solutions that empower your online success.",
+          'At “Zoko World”, we\'re not just a hosting service provider; we\'re your reliable hosting partner dedicated to supporting your online journey. Trust us to provide the hosting solutions that empower your online success.',
       },
       {
         title: 'Ready to Experience Reliable Hosting?',
@@ -354,7 +356,7 @@ export const services: IServices[] = [
     id: '6',
     status: 1,
     slug: 'Empower Your Online Store with Cutting-Edge E-commerce Solutions',
-    image: '/images/services/ecommerce-development.jpg',
+    image: '/images/services/ecomerce.jpg',
     title: 'Empower Your Online Store with Cutting-Edge E-commerce Solutions',
     seo: {
       title:
@@ -362,12 +364,12 @@ export const services: IServices[] = [
       description:
         'At Zoko World, we specialize in creating powerful and visually stunning e-commerce platforms tailored to meet the unique needs of businesses seeking to thrive in the digital marketplace. Contact us today to discuss your e-commerce development needs or to get started with your project.',
     },
-    sd: "At Zoko World, we specialize in creating powerful and visually stunning e-commerce platforms that drive sales, engage customers, and elevate your brand's online presence.",
+    sd: 'At Zoko World, we specialize in creating powerful and visually stunning e-commerce platforms that drive sales, engage customers, and elevate your brand\'s online presence.',
     description: [
       {
         content: `At Zoko World, we specialize in creating powerful and visually stunning e-commerce platforms tailored to meet the unique needs of businesses seeking to thrive in the digital marketplace. Contact us today to discuss your e-commerce development needs or to get started with your project.
         `,
-        image: '/images/services/maxillofacial-surgery.jpg',
+        image: '/images/services/ecomerce.jpg',
       },
       {
         title: 'Customized E-commerce Strategies',
@@ -407,12 +409,12 @@ export const services: IServices[] = [
       {
         title: 'Proven Success Stories',
         content:
-          "Explore our portfolio to see the range of successful e-commerce platforms we've developed. Our success stories showcase our expertise in delivering high-performing, conversion-driven online stores.",
+          'Explore our portfolio to see the range of successful e-commerce platforms we\'ve developed. Our success stories showcase our expertise in delivering high-performing, conversion-driven online stores.',
       },
       {
         title: 'Your Partner in Online Success',
         content:
-          "At “Zoko World”, we're committed to building e-commerce solutions that not only meet but exceed your expectations. Let's collaborate and create an e-commerce platform that drives your online success.",
+          'At “Zoko World”, we\'re committed to building e-commerce solutions that not only meet but exceed your expectations. Let\'s collaborate and create an e-commerce platform that drives your online success.',
       },
       {
         title: 'Ready to Elevate Your Online Store?',
@@ -430,9 +432,9 @@ export const services: IServices[] = [
     title: 'Drive Traffic and Boost Visibility with Expert SEO Strategies',
     seo: {
       title:
-        "Expert SEO Strategies to Boost Your Website's Visibility - Zoko World",
+        'Expert SEO Strategies to Boost Your Website\'s Visibility - Zoko World',
       description:
-        "At Zoko World, we specialize in SEO services designed to improve your website's visibility, drive organic traffic, and propel your business ahead in search engine rankings. Contact us today to discuss your SEO needs or to get started with our SEO services.",
+        'At Zoko World, we specialize in SEO services designed to improve your website\'s visibility, drive organic traffic, and propel your business ahead in search engine rankings. Contact us today to discuss your SEO needs or to get started with our SEO services.',
     },
     sd: 'At Zoko World, we understand the power of search engine optimization (SEO) in maximizing your online presence.',
     description: [
@@ -444,7 +446,7 @@ export const services: IServices[] = [
       {
         title: 'Holistic SEO Approach',
         content:
-          "We take a comprehensive approach to SEO, focusing on both on-page and off-page optimization strategies. Our goal is to enhance your website's visibility, improve rankings, and drive targeted traffic that converts.",
+          'We take a comprehensive approach to SEO, focusing on both on-page and off-page optimization strategies. Our goal is to enhance your website\'s visibility, improve rankings, and drive targeted traffic that converts.',
       },
       {
         title: 'Keyword Research and Optimization',
@@ -464,12 +466,12 @@ export const services: IServices[] = [
       {
         title: 'Link Building and Authority',
         content:
-          "Building authority is key. We employ white-hat link building strategies to acquire high-quality backlinks from reputable websites, boosting your website's credibility and authority in the eyes of search engines.",
+          'Building authority is key. We employ white-hat link building strategies to acquire high-quality backlinks from reputable websites, boosting your website\'s credibility and authority in the eyes of search engines.',
       },
       {
         title: 'Analytics and Reporting',
         content:
-          "Transparency is vital. We provide regular reports and analytics that track the performance of your SEO efforts. Our insights help you understand the progress, areas of improvement, and the impact of SEO on your website's visibility and traffic.",
+          'Transparency is vital. We provide regular reports and analytics that track the performance of your SEO efforts. Our insights help you understand the progress, areas of improvement, and the impact of SEO on your website\'s visibility and traffic.',
       },
       {
         title: 'Local SEO Strategies',
@@ -489,10 +491,10 @@ export const services: IServices[] = [
       {
         title: 'Your Partner in SEO Success',
         content:
-          "At “Zoko World”, we're dedicated to elevating your online presence through expert SEO strategies. Let's work together to enhance your website's visibility and drive sustainable growth.",
+          'At “Zoko World”, we\'re dedicated to elevating your online presence through expert SEO strategies. Let\'s work together to enhance your website\'s visibility and drive sustainable growth.',
       },
       {
-        title: "Ready to Enhance Your Website's SEO?",
+        title: 'Ready to Enhance Your Website\'s SEO?',
         content:
           'Contact us today to discuss your SEO needs or to get started with our SEO services.',
       },
@@ -520,7 +522,7 @@ export const services: IServices[] = [
       {
         title: 'Strategic Campaign Planning',
         content:
-          "We begin by understanding your business objectives, target audience, and unique selling points. Our team develops a customized Facebook marketing strategy that aligns with your goals, whether it's increasing brand awareness, driving website traffic, or generating leads and conversions.",
+          'We begin by understanding your business objectives, target audience, and unique selling points. Our team develops a customized Facebook marketing strategy that aligns with your goals, whether it\'s increasing brand awareness, driving website traffic, or generating leads and conversions.',
       },
       {
         title: 'Audience Targeting and Segmentation',
@@ -560,7 +562,7 @@ export const services: IServices[] = [
       {
         title: 'Your Partner in Facebook Marketing',
         content:
-          "At “Zoko World”, we're passionate about unlocking the potential of Facebook marketing to drive your business forward. Let's collaborate to harness the power of this platform for your brand's success.",
+          'At “Zoko World”, we\'re passionate about unlocking the potential of Facebook marketing to drive your business forward. Let\'s collaborate to harness the power of this platform for your brand\'s success.',
       },
       {
         title: 'Ready to Elevate Your Brand on Facebook?',
@@ -592,7 +594,7 @@ export const services: IServices[] = [
       {
         title: 'Strategic Planning for Instagram Success',
         content:
-          "We start by comprehensively understanding your business goals, target audience, and brand identity. Our team develops a bespoke Instagram marketing strategy that aligns with your objectives, whether it's increasing brand awareness, driving conversions, or fostering community engagement.",
+          'We start by comprehensively understanding your business goals, target audience, and brand identity. Our team develops a bespoke Instagram marketing strategy that aligns with your objectives, whether it\'s increasing brand awareness, driving conversions, or fostering community engagement.',
       },
       {
         title: 'Compelling Visual Content Creation',
@@ -607,17 +609,17 @@ export const services: IServices[] = [
       {
         title: 'Strategic Use of Instagram Features',
         content:
-          "From Instagram Stories and Reels to IGTV and shoppable posts, we leverage all the platform's features strategically to maximize engagement and drive user actions, ensuring your brand stays relevant and engaging.",
+          'From Instagram Stories and Reels to IGTV and shoppable posts, we leverage all the platform\'s features strategically to maximize engagement and drive user actions, ensuring your brand stays relevant and engaging.',
       },
       {
         title: 'Influencer Partnerships and Collaborations',
         content:
-          "Influencer marketing can be powerful. We facilitate collaborations with relevant influencers to amplify your brand's reach and credibility, leveraging their audiences to drive awareness and engagement.",
+          'Influencer marketing can be powerful. We facilitate collaborations with relevant influencers to amplify your brand\'s reach and credibility, leveraging their audiences to drive awareness and engagement.',
       },
       {
         title: 'Data-Driven Optimization',
         content:
-          "Continuous monitoring and optimization are crucial. We analyze performance metrics, conduct A/B testing, and refine strategies to maximize your campaign's effectiveness and ROI, ensuring continuous improvement.",
+          'Continuous monitoring and optimization are crucial. We analyze performance metrics, conduct A/B testing, and refine strategies to maximize your campaign\'s effectiveness and ROI, ensuring continuous improvement.',
       },
       {
         title: 'Comprehensive Reporting and Insights',
@@ -627,12 +629,12 @@ export const services: IServices[] = [
       {
         title: 'Proven Track Record',
         content:
-          "Our success stories demonstrate our ability to drive tangible results through Instagram marketing. Explore our portfolio to see how we've helped businesses like yours achieve increased engagement, visibility, and conversions.",
+          'Our success stories demonstrate our ability to drive tangible results through Instagram marketing. Explore our portfolio to see how we\'ve helped businesses like yours achieve increased engagement, visibility, and conversions.',
       },
       {
         title: 'Your Partner for Instagram Success',
         content:
-          "At “Zoko World”, we're passionate about leveraging Instagram's potential to propel your brand's success. Let's collaborate to create an impactful Instagram presence for your business.",
+          'At “Zoko World”, we\'re passionate about leveraging Instagram\'s potential to propel your brand\'s success. Let\'s collaborate to create an impactful Instagram presence for your business.',
       },
       {
         title: 'Ready to Elevate Your Brand on Instagram?',
@@ -646,7 +648,7 @@ export const services: IServices[] = [
     id: '11',
     status: 1,
     slug: 'Drive Targeted Traffic and Maximize Conversions with Expert Google Ads Marketing',
-    image: '/images/services/google-ads-marketing.jpg',
+    image: '/images/services/google-ads.jpg',
     title:
       'Drive Targeted Traffic and Maximize Conversions with Expert Google Ads Marketing',
     seo: {
@@ -660,12 +662,12 @@ export const services: IServices[] = [
       {
         content: `Zoko World offers tailored Google Ads marketing services to boost online visibility, drive qualified traffic, and maximize conversions effectively. Contact us today to discuss your Google Ads marketing goals or to get started with our services.
         `,
-        image: '/images/services/maxillofacial-surgery.jpg',
+        image: '/images/services/google-ads.jpg',
       },
       {
         title: 'Strategic Campaign Planning',
         content:
-          "We begin by understanding your business objectives, target audience, and competitive landscape. Our team crafts a tailored Google Ads strategy focused on achieving your goals, whether it's increasing website traffic, generating leads, or driving sales.",
+          'We begin by understanding your business objectives, target audience, and competitive landscape. Our team crafts a tailored Google Ads strategy focused on achieving your goals, whether it\'s increasing website traffic, generating leads, or driving sales.',
       },
       {
         title: 'Keyword Research and Optimization',
@@ -680,7 +682,7 @@ export const services: IServices[] = [
       {
         title: 'Targeting and Audience Segmentation',
         content:
-          "Precision targeting is key. We leverage Google's advanced targeting options to reach your ideal audience based on demographics, interests, behavior, and geographic location, ensuring your ads are seen by those most likely to convert.",
+          'Precision targeting is key. We leverage Google\'s advanced targeting options to reach your ideal audience based on demographics, interests, behavior, and geographic location, ensuring your ads are seen by those most likely to convert.',
       },
       {
         title: 'Bid Management and Optimization',
@@ -705,12 +707,12 @@ export const services: IServices[] = [
       {
         title: 'Proven Results',
         content:
-          "Our success stories showcase our ability to deliver tangible results through Google Ads marketing. Explore our portfolio to see how we've helped businesses like yours achieve increased traffic, conversions, and revenue.",
+          'Our success stories showcase our ability to deliver tangible results through Google Ads marketing. Explore our portfolio to see how we\'ve helped businesses like yours achieve increased traffic, conversions, and revenue.',
       },
       {
         title: 'Your Partner for Google Ads Success',
         content:
-          "At “Zoko World”, we're dedicated to leveraging Google Ads to drive your business growth. Let's collaborate to create highly effective advertising campaigns that propel your success.",
+          'At “Zoko World”, we\'re dedicated to leveraging Google Ads to drive your business growth. Let\'s collaborate to create highly effective advertising campaigns that propel your success.',
       },
       {
         title: 'Ready to Amplify Your Online Presence?',
@@ -747,7 +749,7 @@ export const services: IServices[] = [
       {
         title: 'Strategic Messaging Campaigns',
         content:
-          "We craft strategic messaging campaigns tailored to your business objectives. Whether it's delivering promotional offers, providing customer support, sharing updates, or initiating conversations, our campaigns are designed to resonate with your audience.",
+          'We craft strategic messaging campaigns tailored to your business objectives. Whether it\'s delivering promotional offers, providing customer support, sharing updates, or initiating conversations, our campaigns are designed to resonate with your audience.',
       },
       {
         title: 'Broadcast Lists and Group Messaging',
@@ -757,7 +759,7 @@ export const services: IServices[] = [
       {
         title: 'Rich Media Sharing',
         content:
-          "Visual content speaks volumes. We harness the power of rich media, including images, videos, and voice notes, to create engaging and impactful messages that capture your audience's attention.",
+          'Visual content speaks volumes. We harness the power of rich media, including images, videos, and voice notes, to create engaging and impactful messages that capture your audiences attention.',
       },
       {
         title: 'Automated Responses and Chatbots',
@@ -777,17 +779,17 @@ export const services: IServices[] = [
       {
         title: 'Compliance and Privacy',
         content:
-          "We adhere to WhatsApp's policies and regulations, ensuring compliance and safeguarding user privacy and data, building trust and credibility in all our marketing endeavors.",
+          'We adhere to WhatsApp  policies and regulations, ensuring compliance and safeguarding user privacy and data, building trust and credibility in all our marketing endeavors. ',
       },
       {
         title: 'Proven Success Stories',
         content:
-          "Our success stories demonstrate our ability to drive impactful results through WhatsApp marketing. Explore our portfolio to see how we've helped businesses like yours achieve increased engagement and conversions.",
+          'Our success stories demonstrate our ability to drive impactful results through WhatsApp marketing. Explore our portfolio to see how we have helped businesses like yours achieve increased engagement and conversions.',
       },
       {
         title: 'Your Partner for WhatsApp Success',
         content:
-          "At “Zoko World”, we're committed to harnessing the potential of WhatsApp to elevate your brand's communication and drive business success.",
+          'At “Zoko World”, we are committed to harnessing the potential of WhatsApp to elevate your brand communication and drive business success.',
       },
       {
         title: 'Ready to Harness WhatsApp for Your Business?',
@@ -818,7 +820,7 @@ export const services: IServices[] = [
       {
         title: 'Strategic Campaign Planning',
         content:
-          "We start by understanding your business goals, target audience, and unique value propositions. Our team develops a comprehensive email marketing strategy focused on achieving your objectives, whether it's increasing brand awareness, nurturing leads, or boosting sales.",
+          'We start by understanding your business goals, target audience, and unique value propositions. Our team develops a comprehensive email marketing strategy focused on achieving your objectives, whether it  increasing brand awareness, nurturing leads, or boosting sales.',
       },
       {
         title: 'List Segmentation and Personalization',
@@ -858,12 +860,12 @@ export const services: IServices[] = [
       {
         title: 'Proven Results',
         content:
-          "Our success stories demonstrate our ability to drive impactful results through email marketing. Explore our portfolio to see how we've helped businesses like yours achieve increased engagement and conversions.",
+          'Our success stories demonstrate our ability to drive impactful results through email marketing. Explore our portfolio to see how we have helped businesses like yours achieve increased engagement and conversions.',
       },
       {
         title: 'Your Partner for Email Marketing Success',
         content:
-          "At “Zoko World”, we're dedicated to leveraging the power of email marketing to fuel your business growth.",
+          'At “Zoko World”, we are dedicated to leveraging the power of email marketing to fuel your business growth.',
       },
       {
         title: 'Ready to Elevate Your Email Strategy?',
@@ -877,7 +879,7 @@ export const services: IServices[] = [
     id: '14',
     status: 1,
     slug: 'Create Seamless Experiences Across All Devices with Mobile-Responsive Design',
-    image: '/images/services/mobile-responsive-design.jpg',
+    image: '/images/services/web-design-technology-browsing-programming-concept.jpg',
     title:
       'Create Seamless Experiences Across All Devices with Mobile-Responsive Design',
     seo: {
@@ -885,12 +887,12 @@ export const services: IServices[] = [
       description:
         'Zoko World offers mobile-responsive design services to ensure your website delivers an exceptional user experience across all devices. Contact us today to discuss your mobile-responsive design needs or to get started with our services.',
     },
-    sd: "At Zoko World, we understand the pivotal role of mobile devices in today's digital landscape. Our mobile-responsive design services ensure that your website delivers an exceptional user experience, regardless of the device your audience uses, fostering engagement and driving results.",
+    sd: 'At Zoko World, we understand the pivotal role of mobile devices in today  digital landscape. Our mobile-responsive design services ensure that your website delivers an exceptional user experience, regardless of the device your audience uses, fostering engagement and driving results.',
     description: [
       {
         content: `Zoko World offers mobile-responsive design services to ensure your website delivers an exceptional user experience across all devices. Contact us today to discuss your mobile-responsive design needs or to get started with our services..
         `,
-        image: '/images/services/maxillofacial-surgery.jpg',
+        image: '/images/services/web-design-technology-browsing-programming-concept.jpg',
       },
       {
         title: 'Mobile-Centric Approach',
@@ -915,7 +917,7 @@ export const services: IServices[] = [
       {
         title: 'Visual Consistency and Branding',
         content:
-          "Your brand's identity remains consistent across all devices. Our designs maintain visual consistency and branding elements, ensuring seamless messaging and imagery to mobile users.",
+          'Your brand identity remains consistent across all devices. Our designs maintain visual consistency and branding elements, ensuring seamless messaging and imagery to mobile users.',
       },
       {
         title: 'SEO-Friendly Mobile Design',
@@ -935,7 +937,7 @@ export const services: IServices[] = [
       {
         title: 'Your Partner for Seamless Mobile Experiences',
         content:
-          "At “Zoko World”, we're dedicated to delivering mobile-responsive designs that captivate audiences and drive engagement across all devices.",
+          'At “Zoko World”, we are dedicated to delivering mobile-responsive designs that captivate audiences and drive engagement across all devices.',
       },
       {
         title: 'Ready to Create a Seamless Mobile Experience?',

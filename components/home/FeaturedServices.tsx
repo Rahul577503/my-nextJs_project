@@ -20,7 +20,7 @@ export default function FeaturedServices() {
         {services?.map((service) => {
           if (service?.featured !== 1 || service?.status !== 1) return null
           return (
-            <Grid item lg={3} md={4} sm={6} xs={12} mb={2} key={service.id}>
+            <Grid item lg={4} md={4} sm={6} xs={12} mb={2} key={service.id}>
               <GalleryCard
                 image={service?.image}
                 title={service.title}

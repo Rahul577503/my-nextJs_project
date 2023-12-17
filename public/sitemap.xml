@@ -1,107 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/about-us</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/contact-us</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/services</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/academy</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/gallery</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/services/dental-surgery</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/services/oral-maxillofacial-surgery</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/services/orthognathic-surgery</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/enquiry</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/services/distraction-osteogenesis</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/services/jaw-tumors</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/services/dental-implants</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/services/zygomatic-implants</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/services/tmj-diseases-and-disorders</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/services/white-and-red-lesions-of-oral-cavity</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/services/wisdom-tooth</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/services/dentoalveolar-surgery</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/services/orofacial-pain</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://faciomaxillary-dentalcare.com/services/maxillofacial-trauma</loc>
-  <lastmod>2023-01-14T12:33:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://zokoworld.com/</loc>
+        <lastmod>2023-01-14T12:33:25+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://zokoworld.com/about-us</loc>
+        <lastmod>2023-01-14T12:33:25+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://zokoworld.com/contact-us</loc>
+        <lastmod>2023-01-14T12:33:25+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://zokoworld.com/services</loc>
+        <lastmod>2023-01-14T12:33:25+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://zokoworld.com/academy</loc>
+        <lastmod>2023-01-14T12:33:25+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://zokoworld.com/gallery</loc>
+        <lastmod>2023-01-14T12:33:25+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://zokoworld.com/contact-us</loc>
+        <lastmod>2023-01-14T12:33:25+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
 </urlset>

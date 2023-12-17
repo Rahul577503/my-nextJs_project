@@ -212,8 +212,13 @@ Mobile No.: ${body.mobile} \r\n
   }
 
   const emailResp = await client.sendEmail({
-    From: 'Facio Maxillary & Dental Health Centre <contact@faciomaxillary-dentalcare.com>',
-    To: (process.env.NODE_ENV === 'development') ? process.env.NEXT_PUBLIC_TESTING_EMAIL: body?.institute ? process.env.NEXT_PUBLIC_ENQUIRY_EMAIL_COURSE : process.env.NEXT_PUBLIC_ENQUIRY_EMAIL,
+    From: 'Facio Maxillary & Dental Health Centre <contact@zokoworld-dentalcare.com>',
+    To:
+      process.env.NODE_ENV === 'development'
+        ? process.env.NEXT_PUBLIC_TESTING_EMAIL
+        : body?.institute
+        ? process.env.NEXT_PUBLIC_ENQUIRY_EMAIL_COURSE
+        : process.env.NEXT_PUBLIC_ENQUIRY_EMAIL,
     // Bcc: (process.env.NODE_ENV === 'development') ? null : process.env.NEXT_PUBLIC_TESTING_EMAIL,
     Cc: 'dsmaxfax@yahoo.com',
     ReplyTo: body.email,

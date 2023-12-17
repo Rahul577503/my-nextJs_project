@@ -144,3 +144,32 @@ export type ILinks = {
   type?: string
   link?: string
 }
+
+// for meta data
+export interface IMetaData {
+  title: string;
+  description: string;
+  ogTitle: string;
+  ogDescription: string;
+  ogImage: string;
+  twitterCard: string;
+  twitterSite: string;
+  twitterCreator: string;
+  canonicalUrl: string;
+}
+
+export interface IPortfolio {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  slug: string;
+}
+
+export interface IPrivacyPolicyDescription {
+  description: Array<{
+    image?: string;
+    title: string;
+    content: string;
+  }>;
+}

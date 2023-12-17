@@ -1,15 +1,15 @@
 import { ButtonProps } from '@mui/material/Button'
 
-export interface IBanners{
-  id: string,
-  slug: string,
-  type?: string,
-  orientation?: string,
-  image: string,
-  title?: string,
-  description?: string,
-  buttons: ButtonProp[],
-  buttonsAlign?: string,
+export interface IBanners {
+  id: string
+  slug: string
+  type?: string
+  orientation?: string
+  image: string
+  title?: string
+  description?: string
+  buttons: ButtonProp[]
+  buttonsAlign?: string
 }
 
 type ButtonProp = ButtonProps & {
@@ -42,10 +42,9 @@ export const banners: IBanners[] = [
       },
     ],
     buttonsAlign: 'left',
-    title: 'Oral & Maxillofacial Surgery',
-    description: `This surgical practice includes the diagnosis, surgical and adjunctive
-    treatment of diseases, injuries and defects involving both functional and aesthetis aspects
-    of the hard and soft tissue of the face.`,
+    title: 'Website Development',
+    description:
+      'Tailored and robust website development solutions to suit your business requirements.',
   },
   {
     id: '2',
@@ -56,16 +55,15 @@ export const banners: IBanners[] = [
     buttons: [
       {
         title: 'Read More',
-        link: '/services/dental-surgery',
+        link: '/services/',
         color: 'primary',
         variant: 'contained',
       },
     ],
     buttonsAlign: 'left',
-    title: 'Dental Surgery & Cosmetology',
-    description: `Facio Maxillary and Dental Health Centre was established in the year 1987 as a small
-    dental clinic by Dr. Binita Srivastava who did her Masters (MDS) in the subject of Pedodontics
-    and Preventive Dentistry from the prestigious King Georges Medical College Lucknow.`,
+    title: 'Website Designing',
+    description:
+      'Captivating and user-centric website designs that resonate with your brand identity.',
   },
   {
     id: '3',
@@ -76,15 +74,14 @@ export const banners: IBanners[] = [
     buttons: [
       {
         title: 'Read More',
-        link: '/academy',
+        link: '/services',
         color: 'primary',
         variant: 'contained',
       },
     ],
     buttonsAlign: 'left',
-    title: 'KDS Max Fax Academy',
-    description: `KDS Max Fax academy has been started with a vision of “Skill development” and “Clinical Learning”
-    and mission is to learn more by doing. Number of Participants in each batch has been kept to a minimum
-    so that they are able to do procedures/ surgeries confidently by the end of the program, on their own.`,
+    title: 'Responsive Web Design',
+    description:
+      'Creating websites that adapt and respond effectively to various screen sizes and devices.',
   },
 ]

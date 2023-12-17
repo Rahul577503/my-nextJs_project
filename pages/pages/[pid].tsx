@@ -57,13 +57,10 @@ export default function Profile({
             <H1 variant="h4" align="left" mt={1} color="secondary">
               {data.title}
             </H1>
-            <RenderImageWithContent
-              description={data.description}
-            />
+            <RenderImageWithContent description={data.description} />
           </Grid>
         </Grid>
       </Background>
-
     </Page>
   )
 }
@@ -83,8 +80,8 @@ Profile.getLayout = function getLayout(page: ReactElement) {
         <meta property="og:description" content={page?.props?.data?.title} />
 
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@faciomaxillary" />
-        <meta name="twitter:creator" content="@faciomaxillary" />
+        <meta name="twitter:site" content="@zokoworld" />
+        <meta name="twitter:creator" content="@zokoworld" />
       </Head>
       {page}
     </Layout>

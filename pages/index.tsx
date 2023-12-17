@@ -8,12 +8,16 @@ import Page from '@/components/wrappers/Page'
 import Background from '@/components/wrappers/Background'
 import Banner from '@/components/home/Banner'
 import RenderImageWithContent from '@/components/RenderImageWithContent'
-import { getCanonical } from '@/utils/common'
 import { site } from '@/constants/common'
-import { faciomaxillary } from '@/constants/faciomaxillary'
-
-const FeaturedServices = dynamic(() => import('@/components/home/FeaturedServices'), { ssr: false })
-const Reviews = dynamic(() => import('@/components/home/Reviews'), { ssr: false })
+import { zokoworld } from '@/constants/sites'
+const FeaturedServices = dynamic(
+  () => import('@/components/home/FeaturedServices'),
+  { ssr: false }
+)
+import { homeMetaData } from '@/constants/metaData'
+const Reviews = dynamic(() => import('@/components/home/Reviews'), {
+  ssr: false,
+})
 
 export default function Index(): JSX.Element {
   return (
@@ -21,10 +25,12 @@ export default function Index(): JSX.Element {
       <Banner />
       <Page>
         <Background>
-          <MainHeading id='mainHeading'><>About {site.title}</></MainHeading>
+          <MainHeading id="mainHeading">
+            <>About {site.title}</>
+          </MainHeading>
           <RenderImageWithContent
-            image={faciomaxillary.image}
-            description={faciomaxillary.description}
+            image={zokoworld.image}
+            description={zokoworld.description}
             height={420}
             readMore={true}
           />
@@ -41,20 +47,19 @@ Index.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
       <Head>
-        <title>Zoko World</title>
-        <meta name="description" content="Faciomaxillary and Dental Health Centre in Noida, India, provide solutions for diseases and defects of the oral and maxillofacial region. Call Now 09312284822." />
+        <title>{homeMetaData[0].title}</title>
+        <meta name="description" content={homeMetaData[0].description} />
 
-        <meta property="og:title" content="Dental Clinic in Noida, India - Faciomaxillary Dental Care" />
+        <meta property="og:title" content={homeMetaData[0].ogTitle} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="" />
-        <meta property="og:image" content="/images/oral-care.svg" />
-        <meta property="og:description" content="Faciomaxillary and Dental Health Centre in Noida, India, provide solutions for diseases and defects of the oral and maxillofacial region. Call Now 09312284822." />
+        <meta property="og:url" content={homeMetaData[0].canonicalUrl} />
+        <meta property="og:image" content={homeMetaData[0].ogImage} />
+        <meta property="og:description" content={homeMetaData[0].ogDescription} />
 
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@faciomaxillary" />
-        <meta name="twitter:creator" content="@faciomaxillary" />
-
-        <link rel="canonical" href={getCanonical('/')} key="canonical"/>
+        <meta name="twitter:card" content={homeMetaData[0].twitterCard} />
+        <meta name="twitter:site" content={homeMetaData[0].twitterSite} />
+        <meta name="twitter:creator" content={homeMetaData[0].twitterCreator} />
+        <link rel="canonical" href={homeMetaData[0].canonicalUrl} />
       </Head>
       {page}
     </Layout>

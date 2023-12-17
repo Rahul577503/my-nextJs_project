@@ -10,6 +10,7 @@ import GalleryCard from '@/components/card/GalleryCard'
 import Page from '@/components/wrappers/Page'
 import { getCanonical } from '@/utils/common'
 import { services } from '@/constants/services'
+import { metaData } from '@/constants/metaData'
 
 export default function Services(): JSX.Element {
   const newService = services.slice()
@@ -27,7 +28,7 @@ export default function Services(): JSX.Element {
           allService.map((service) => {
             if (service.status !== 1) return null
             return (
-              <Grid item lg={3} md={4} sm={6} xs={12} mb={4} key={service.id}>
+              <Grid item lg={4} md={4} sm={6} xs={12} mb={4} key={service.id}>
                 <div style={{ display: 'flex', height: '100%' }}>
                   <GalleryCard
                     image={service?.image}
@@ -66,22 +67,22 @@ export default function Services(): JSX.Element {
 Services.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
-      <Head>
-        <title>Services - Faciomaxillary & Dental Health Centre</title>
-        <meta name="description" content="We at Faciomaxillary and Dental Health Centre in Noida, India, offer Oral & Maxillofacial Surgery, Distraction Osteogenesis. Call us at 09312284822." />
+    <Head>
+      <title>{metaData[0].title}</title>
+      <meta name="description" content={metaData[0].description} />
 
-        <meta property="og:title" content="Services - Faciomaxillary & Dental Health Centre" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="" />
-        <meta property="og:image" content="/logo.png" />
-        <meta property="og:description" content="We at Faciomaxillary and Dental Health Centre in Noida, India, offer Oral & Maxillofacial Surgery, Distraction Osteogenesis. Call us at 09312284822." />
+      <meta property="og:title" content={metaData[0].ogTitle} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="" />
+      <meta property="og:image" content={metaData[0].ogImage} />
+      <meta property="og:description" content={metaData[0].ogDescription} />
 
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@faciomaxillary" />
-        <meta name="twitter:creator" content="@faciomaxillary" />
-        <link rel="canonical" href={getCanonical('/services')} key="canonical"/>
-      </Head>
-      {page}
-    </Layout>
+      <meta name="twitter:card" content={metaData[0].twitterCard} />
+      <meta name="twitter:site" content={metaData[0].twitterSite} />
+      <meta name="twitter:creator" content={metaData[0].twitterCreator} />
+      <link rel="canonical" href={getCanonical('/')} key="canonical" />
+    </Head>
+    {page}
+  </Layout>
   )
 }

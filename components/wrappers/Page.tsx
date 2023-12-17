@@ -11,7 +11,7 @@ export default function Page({
 }: Prop): JSX.Element {
   return (
     <Container
-      maxWidth={maxWidth || 'lg'}
+      maxWidth={maxWidth || 'xlg'}
       sx={{
         mt: 2,
         mb: 2,

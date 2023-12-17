@@ -57,7 +57,7 @@ export default function EnquiryModal() {
   const [open, setOpen] = useState(false)
   const handleClose = (event: any, reason: any) => {
     if (reason && (reason === 'backdropClick' || reason === 'escapeKeyDown'))
-        return
+      return
     setOpen(false)
   }
 
@@ -97,7 +97,7 @@ export default function EnquiryModal() {
             }}
             color="inherit"
             underline="hover"
-            href="https://faciomaxillary-dentalcare.com/"
+            href="https://zokoworld.com/"
           >
             {'© '}
             {site.title}

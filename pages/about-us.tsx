@@ -14,9 +14,11 @@ import Background from '@/components/wrappers/Background'
 import RenderImageWithContent from '@/components/RenderImageWithContent'
 import { getCanonical, joinText } from '@/utils/common'
 import { site } from '@/constants/common'
-import { faciomaxillary } from '@/constants/faciomaxillary'
+import { aboutMetaData } from '@/constants/metaData'
+import {zokoworld} from '@/constants/sites'
 // import { doctors } from '@/constants/doctors'
 import { IDoctors } from '@/interfaces/common'
+import { SixteenMpSharp } from '@mui/icons-material'
 
 function Profile({ data }: { data: IDoctors }): JSX.Element {
   const gridWidth = data?.image
@@ -40,12 +42,14 @@ function Profile({ data }: { data: IDoctors }): JSX.Element {
             xs={gridWidth.xs}
           >
             <SubHeading
-              style={{fontFamily: 'Roboto Slab',
-              fontWeight: '500',
-              marginBottom:0,
-              marginTop: 0,
-              textTransform: 'initial',
-            }}>
+              style={{
+                fontFamily: 'Roboto Slab',
+                fontWeight: '500',
+                marginBottom: 0,
+                marginTop: 0,
+                textTransform: 'initial',
+              }}
+            >
               {joinText([data.prefix, data.firstName, data.lastName])}
             </SubHeading>
 
@@ -76,8 +80,8 @@ export default function About(): JSX.Element {
           <>About {site.title}</>
         </MainHeading>
         <RenderImageWithContent
-          image={faciomaxillary.image}
-          description={faciomaxillary.description}
+          image={zokoworld.image}
+          description={zokoworld.description}
         />
       </Background>
 
@@ -99,24 +103,20 @@ export default function About(): JSX.Element {
 About.getLayout = function getLayout(page: ReactElement) {
   return (
     <Layout>
-      <Head>
-        <title>About Us - Faciomaxillary & Dental Health Centre</title>
-        <meta name="description" content="Know about Faciomaxillary & Dental Health Centre in Noida, India has all the latest types of equipment and instruments & provides solutions for all dental ailments." />
+       <Head>
+        <title>{aboutMetaData[0].title}</title>
+        <meta name="description" content={aboutMetaData[0].description} />
 
-        <meta property="og:title" content="About Us - Faciomaxillary & Dental Health Centre" />
+        <meta property="og:title" content={aboutMetaData[0].ogTitle} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="" />
-        <meta property="og:image" content="/images/oral-care.svg" />
-        <meta property="og:description" content="Know about Faciomaxillary & Dental Health Centre in Noida, India has all the latest types of equipment and instruments & provides solutions for all dental ailments." />
+        <meta property="og:url" content={aboutMetaData[0].canonicalUrl} />
+        <meta property="og:image" content={aboutMetaData[0].ogImage} />
+        <meta property="og:description" content={aboutMetaData[0].ogDescription} />
 
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@faciomaxillary" />
-        <meta name="twitter:creator" content="@faciomaxillary" />
-        <link
-          rel="canonical"
-          href={getCanonical('/about-us')}
-          key="canonical"
-        />
+        <meta name="twitter:card" content={aboutMetaData[0].twitterCard} />
+        <meta name="twitter:site" content={aboutMetaData[0].twitterSite} />
+        <meta name="twitter:creator" content={aboutMetaData[0].twitterCreator} />
+        <link rel="canonical" href={aboutMetaData[0].canonicalUrl} key="canonical" />
       </Head>
       {page}
     </Layout>

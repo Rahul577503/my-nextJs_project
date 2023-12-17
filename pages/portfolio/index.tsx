@@ -20,7 +20,7 @@ import { portfolios } from '@/constants/portfolio'
 import CenterFocusStrongIcon from '@mui/icons-material/CenterFocusStrong'
 import Link from 'next/link'
 
-export default function Portfolio(): JSX.Element {
+const Portfolio: React.FC<Props> = (): JSX.Element => {
   const [value, setValue] = useState(0)
   const [open, setOpen] = useState(false)
   const [selectedImage, setSelectedImage] = useState(false)

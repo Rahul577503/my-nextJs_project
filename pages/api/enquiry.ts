@@ -193,7 +193,7 @@ Mobile No.: ${body.mobile} \r\n
 
   try {
     const client = await clientPromise
-    const db = client.db('faciomax')
+    const db = client.db('zokoworld')
 
     await db.collection('enquiries').insertOne({
       firstName: body?.firstName,
@@ -212,7 +212,7 @@ Mobile No.: ${body.mobile} \r\n
   }
 
   const emailResp = await client.sendEmail({
-    From: 'Facio Maxillary & Dental Health Centre <contact@zokoworld-dentalcare.com>',
+    From: 'zoko world <contact@zokoworld-dentalcare.com>',
     To:
       process.env.NODE_ENV === 'development'
         ? process.env.NEXT_PUBLIC_TESTING_EMAIL
@@ -220,7 +220,7 @@ Mobile No.: ${body.mobile} \r\n
         ? process.env.NEXT_PUBLIC_ENQUIRY_EMAIL_COURSE
         : process.env.NEXT_PUBLIC_ENQUIRY_EMAIL,
     // Bcc: (process.env.NODE_ENV === 'development') ? null : process.env.NEXT_PUBLIC_TESTING_EMAIL,
-    Cc: 'dsmaxfax@yahoo.com',
+    Cc: 'zokoworld@gmail.com',
     ReplyTo: body.email,
     TrackOpens: true,
     Tag: body?.institute ? 'Course Enquiry' : 'Enquiry',

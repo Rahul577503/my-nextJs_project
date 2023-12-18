@@ -1,188 +1,132 @@
 export type IServices = {
-  id: string
-  slug: string
-  image: string
-  title: string
-  sd: string
-  description: string
-  featured?: number
-}
+  id: string;
+  slug: string;
+  image: string;
+  title: string;
+  sd: string;
+  description: string;
+  featured?: number;
+};
 
 export const services: IServices[] = [
   {
     id: '1',
-    slug: 'oral-maxillofacial-surgery',
-    image: '/images/medical1.jpg',
-    title: 'Oral & Maxillofacial Surgery',
-    sd:
-      'We have the right caring, experience and dedicated professional for you.',
+    slug: 'Website-Designing',
+    image: '/images/website-designing.jpg',
+    title: 'Website Designing',
+    sd: 'Crafting custom designs for impactful websites.',
     description: '',
   },
   {
     id: '2',
-    slug: '2',
-    image: '/images/medical2.jpg',
-    title: 'Orthognathic Surgery (Jaw Deformity correction)',
-    featured: 1,
-    sd:
-      'We have the right caring, experience and dedicated professional for you.',
-      description: '',
+    slug: 'Website-Development',
+    image: '/images/website-development.jpg',
+    title: 'Website Development',
+    sd: 'Creating high-quality websites tailored to your needs.',
+    description: 'placeholder description for Custom Website Development',
   },
   {
     id: '3',
-    slug: '3',
-    image: '/images/medical3.jpg',
-    title: 'Distraction Osteogenesis',
-    sd:
-      'We have the right caring, experience and dedicated professional for you.',
-      description: '',
+    slug: 'Responsive-Web-Design',
+    image: 'responsive.jpg',
+    title: 'Responsive Web Design',
+    sd: 'Designing websites to seamlessly adapt to various devices.',
+    description: 'Placeholder description for Custom Website Design',
   },
   {
     id: '4',
-    slug: '4',
-    image: '/images/medical4.jpg',
-    title: 'Surgical Correction',
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
+    slug: 'Website-Maintenance',
+    image: 'websiteMaintenance.jpg',
+    title: 'Website Maintenance',
+    sd: 'Providing consistent upkeep and support for your website.',
+    description: 'Placeholder description for Custom website Maintanence',
   },
   {
     id: '5',
-    slug: '5',
-    image: '/images/medical6.jpeg',
-    title: 'Jaw Cysts',
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
+    slug: 'Domain-Registration',
+    image: 'Domain.jpg',
+    title: 'Domain Registration',
+    sd: 'Helping you secure the perfect domain for your online presence.',
+    description: 'Placeholder description for Custom domain registration',
   },
   {
     id: '6',
-    slug: '6',
-    image: '/images/medical1.jpg',
-    title: 'Jaw Tumors',
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
+    slug: 'Web-Hosting',
+    image: 'webHosting.jpg',
+    title:'',
+    sd: 'Offering reliable and secure hosting solutions for your website.',
+    description: 'Placeholder description for Custom web hosting',
   },
   {
     id: '7',
-    slug: '7',
-    image: '/images/medical2.jpg',
-    title: 'Dental Implants',
-    featured: 1,
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
+    slug: 'Android-App-Development',
+    image: 'android.jpg',
+    title: 'Android App Development',
+    sd: 'Creating innovative and user-friendly Android applications.',
+    description: 'Placeholder description for Custom android developement',
   },
   {
     id: '8',
-    slug: '8',
-    image: '/images/medical3.jpg',
-    title: 'Zygomatic Implants',
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
+    slug: 'IOS-App-Development',
+    image: 'iosApp.jpg',
+    title: 'IOS App Development',
+    sd: 'Building cutting-edge applications for Apple devices.',
+    description: 'Placeholder description for Custom ios development',
   },
   {
     id: '9',
-    slug: '9',
-    image: '/images/medical4.jpg',
-    title: 'Sinus Lift surgery',
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
+    slug: 'Custom-Website-Design',
+    image: 'custome-website.jpg',
+    title: 'Custom Website Design',
+    sd: 'Crafting unique and tailored website designs for your business.',
+    description: 'Placeholder description for Custom custome web-site design',
   },
   {
     id: '10',
-    slug: '10',
-    image: '/images/medical4.jpg',
-    title: 'TMJ  Diseases and Disorders',
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
+    slug: 'WordPress-Website-Design',
+    image: 'wordpress.jpg',
+    title: 'WordPress Website Design',
+    sd: 'Building stunning websites using the powerful WordPress platform.',
+    description: 'Placeholder description for Custom wordpress website desing',
   },
   {
     id: '11',
-    slug: '11',
-    image: '/images/medical4.jpg',
-    title: 'Zygomatic Implants ',
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
-  },{
+    slug: 'Startup-Website-Design',
+    image: 'startup.jpg',
+    title: 'Startup Website Design',
+    sd: 'Creating innovative and user-friendly websites for startups.',
+    description: '',
+  },
+  {
     id: '12',
-    slug: '12',
-    image: '/images/medical4.jpg',
-    title: 'Periapical Surgeries',
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
+    slug: 'Open-Source-Web-Design',
+    image: 'openSource.jpg',
+    title: 'Open Source Web Design',
+    sd: 'Utilizing open-source technologies to design dynamic websites.',
+    description: 'Placeholder description for Custom opensource ',
   },
   {
     id: '13',
-    slug: '13',
-    image: '/images/medical4.jpg',
-    title: 'Botox Fillers and threads for Facial Rejuvenation',
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
+    slug: 'Open-Cart-Development',
+    image: 'openCart.jpg',
+    title: 'Open Cart Development',
+    sd: 'Developing e-commerce solutions using the Open Cart platform.',
+    description: 'Placeholder description for Custom open card developement',
   },
   {
     id: '14',
-    slug: '14',
-    image: '/images/medical4.jpg',
-    title: 'Wisdom Tooth',
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
+    slug: 'CMS-Development',
+    image: 'cms.jpg',
+    title: 'CMS Development',
+    sd: 'Building content management systems for seamless website management.',
+    description: 'Placeholder description for Custom CMS Developemtn',
   },
   {
     id: '15',
-    slug: '15',
-    image: '/images/medical4.jpg',
-    title: 'DentoAlveolar Surgery',
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
-  },
-  {
-    id: '16',
-    slug: '16',
-    image: '/images/medical4.jpg',
-    title: 'Orofacial Pain',
-    featured: 1,
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
-  },
-  {
-    id: '17',
-    slug: '17',
-    image: '/images/medical4.jpg',
-    title: 'Dental Care',
-    featured: 1,
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
-  },
-  {
-    id: '18',
-    slug: '18',
-    image: '/images/medical4.jpg',
-    title: 'Maxillofacial Trauma',
-    featured: 1,
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
-  },
-  {
-    id: '19',
-    slug: '19',
-    image: '/images/medical4.jpg',
-    title: 'Cosmatology',
-    featured: 1,
-    sd:
-      'We know that in some situations, we have to serve you at your home.',
-      description: '',
+    slug: 'Software-Development',
+    image: 'softwareDevelopment',
+    title: 'Software Development',
+    sd: 'Creating customized software solutions tailored to your requirements.',
+    description: 'Placeholder description for Custom software developement',
   },
 ]

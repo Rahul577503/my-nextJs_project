@@ -87,7 +87,7 @@ export default function Portfolio(): JSX.Element {
             onChange={handleChange}
             indicatorColor="primary"
             textColor="primary"
-            centered
+            scrollButtons="auto"
           >
             <Tab label="ALL" />
             <Tab label="WEB DESIGN" />
@@ -173,17 +173,16 @@ export default function Portfolio(): JSX.Element {
           open={open}
           onClose={handleCloseModal}
           style={{
-            position:'absolute',
-            top:'10%',
-            left:'10%',
+            position: 'absolute',
+            top: '10%',
+            left: '10%',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             overflow: 'scroll',
           }}
         >
-          <Box
-            onClick={handleCloseModal}>
+          <Box onClick={handleCloseModal}>
             <div onClick={(e) => e.stopPropagation()}>
               <Image
                 src={selectedImage}

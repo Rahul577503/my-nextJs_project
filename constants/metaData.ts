@@ -52,11 +52,9 @@ export const contactMetaData: IMetaData[] = [
 export const homeMetaData: IMetaData[] = [
   {
     title: 'Zoko World',
-    description:
-      'Zokoworld and Dental Health Centre in Noida, India, provide solutions for diseases and defects of the oral and maxillofacial region. Call Now 09312284822.',
-    ogTitle: 'Dental Clinic in Noida, India - Zokoworld Dental Care',
-    ogDescription:
-      'Zokoworld and Dental Health Centre in Noida, India, provide solutions for diseases and defects of the oral and maxillofacial region. Call Now 09312284822.',
+    description:'Expert website designing services tailored to meet your business needs and ensure an impactful online presence.',
+    ogTitle: 'zoko world India - Zokoworld ',
+    ogDescription:      'Comprehensive website development solutions utilizing cutting-edge technologies for a dynamic web experience.',
     ogImage: '/images/oral-care.svg',
     twitterCard: 'summary',
     twitterSite: '@zokoworld',

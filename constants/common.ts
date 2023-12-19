@@ -1,5 +1,5 @@
 import { IFooterLinks } from '@/interfaces/common'
-
+import { services } from './services'
 export const navItems = [
   {
     title: 'Home',
@@ -62,41 +62,31 @@ export const copyright = {
 export const footerLinks: IFooterLinks[] = [
   {
     section: 'Our Services',
-    links: [
-      { title: 'Website Designing', link: '' },
-      { title: 'Website Development', link: '/website-development' },
-      { title: 'Responsive Web Design', link: '/responsive-web-design' },
-      { title: 'Website Maintenance', link: '/website-maintenance' },
-      { title: 'Domain Registration', link: '/domain-registration' },
-      { title: 'Web Hosting', link: '/services/Reliable%20Hosting%20Solutions%20for%20Your%20Online%20Success' },
-      { title: 'Android App Development', link: '/android-app-development' },
-      { title: 'IOS App Development', link: '/ios-app-development' },
-    ],
+    links: services
+      .filter((service) => service.featured !== 1) // Filter out services with featured set to 1
+      .map((service) => ({
+        title: service.title,
+        link: `/services/${service.slug}`,
+      })),
   },
   {
     section: 'Popular Services',
-    links: [
-      { title: 'Custom Website Design', link: '/custom-website-design' },
-      { title: 'WordPress Website Design', link: '/wordpress-website-design' },
-      { title: 'Startup Website Design', link: '/startup-website-design' },
-      { title: 'Open Source Web Design', link: '/open-source-web-design' },
-      { title: 'Open Cart Development', link: '/open-cart-development' },
-      { title: 'CMS Development', link: '/cms-development' },
-      { title: 'WordPress Development', link: '/wordpress-development' },
-    ],
+    links: services
+      .filter((service) => service.featured === 1) // Filter services with featured set to 1
+      .map((service) => ({
+        title: service.title,
+        link: `/services/${service.slug}`,
+      })),
   },
   {
     section: '',
     links: [
-      { title: 'Software Development', link: '/software-development' },
-      { title: 'E-Commerce Development', link: '/e-commerce-development' },
-      { title: 'Social Media Marketing', link: '/social-media-marketing' },
-      {
-        title: 'Search Engine Optimization',
-        link: '/search-engine-optimization',
-      },
-      { title: 'Bulk SMS', link: '/bulk-sms' },
-      {title:'Privacy-Policy',link:'/privacy'},
+      { title: 'Our Latest Work', link: '/portfolio' },
+      { title: 'Career', link: '/career' },
+      { title: 'Refund-Policy', link: '/legal/refund' },
+      { title: 'Privacy-Policy', link: '/legal/privacy' },
+      { title: 'contact us', link: '/contact-us' },
+      {title:'Terms of Use',link:'/terms'},
     ],
   },
   {

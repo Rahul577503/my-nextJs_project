@@ -77,7 +77,7 @@ export const services: IServices[] = [
     slug: 'Comprehensive Website Development Solutions Tailored to Your Business',
     image: '/images/services/website-development.jpg',
     title:
-      'Comprehensive Website Development Solutions Tailored to Your Business',
+      'Website Development',
     seo: {
       title:
         'Comprehensive Website Development Solutions Tailored to Your Business - Zoko World',
@@ -150,7 +150,7 @@ export const services: IServices[] = [
     featured: 1,
     slug: 'Crafting Innovative Mobile Solutions for Your Business Growth',
     image: '/images/services/application-development.jpg',
-    title: 'Crafting Innovative Mobile Solutions for Your Business Growth',
+    title: 'App Development',
     seo: {
       title: 'Innovative Mobile Solutions for Your Business - Zoko World',
       description:
@@ -211,7 +211,7 @@ export const services: IServices[] = [
     status: 1,
     slug: 'Your Gateway to an Online Identity - Domain Services',
     image: '/images/services/domain.jpg',
-    title: 'Your Gateway to an Online Identity - Domain Services',
+    title: 'Domain Services',
     seo: {
       title:
         'Domain Services - Your Gateway to an Online Identity | Zoko World',
@@ -284,7 +284,7 @@ export const services: IServices[] = [
     slug: 'Reliable Hosting Solutions for Your Online Success',
     image:
       '/images/services/website-hosting-concept-with-man-holding-tablet.jpg',
-    title: 'Reliable Hosting Solutions for Your Online Success',
+    title: 'Reliable Hosting Solutions ',
     seo: {
       title: 'Reliable Hosting Solutions for Your Online Success - Zoko World',
       description:
@@ -357,7 +357,7 @@ export const services: IServices[] = [
     status: 1,
     slug: 'Empower Your Online Store with Cutting-Edge E-commerce Solutions',
     image: '/images/services/ecomerce.jpg',
-    title: 'Empower Your Online Store with Cutting-Edge E-commerce Solutions',
+    title: ' E-commerce Solutions',
     seo: {
       title:
         'Cutting-Edge E-commerce Solutions - Empower Your Online Store | Zoko World',
@@ -429,7 +429,7 @@ export const services: IServices[] = [
     status: 1,
     slug: 'Drive Traffic and Boost Visibility with Expert SEO Strategies',
     image: '/images/services/search-engine-optimization.jpg',
-    title: 'Drive Traffic and Boost Visibility with Expert SEO Strategies',
+    title: 'SEO Strategies',
     seo: {
       title:
         'Expert SEO Strategies to Boost Your Website\'s Visibility - Zoko World',
@@ -506,7 +506,7 @@ export const services: IServices[] = [
     status: 1,
     slug: 'Harness the Power of Facebook Marketing for Your Business Growth',
     image: '/images/services/facebook-marketing.jpg',
-    title: 'Harness the Power of Facebook Marketing for Your Business Growth',
+    title: 'Facebook Marketing ',
     seo: {
       title: 'Leverage Facebook Marketing for Business Growth - Zoko World',
       description:
@@ -577,7 +577,7 @@ export const services: IServices[] = [
     status: 1,
     slug: 'Elevate Your Brand with Effective Instagram Marketing Strategies',
     image: '/images/services/instagram-marketing.jpg',
-    title: 'Elevate Your Brand with Effective Instagram Marketing Strategies',
+    title: 'Instagram Marketing ',
     seo: {
       title:
         'Effective Instagram Marketing Services for Brand Growth - Zoko World',
@@ -650,7 +650,7 @@ export const services: IServices[] = [
     slug: 'Drive Targeted Traffic and Maximize Conversions with Expert Google Ads Marketing',
     image: '/images/services/google-ads.jpg',
     title:
-      'Drive Targeted Traffic and Maximize Conversions with Expert Google Ads Marketing',
+      'Google Ads Marketing',
     seo: {
       title:
         'Expert Google Ads Marketing Services for Business Growth - Zoko World',
@@ -727,7 +727,7 @@ export const services: IServices[] = [
     status: 1,
     slug: 'Unlock the Power of WhatsApp for Business Growth',
     image: '/images/services/whatsapp-marketing.jpg',
-    title: 'Unlock the Power of WhatsApp for Business Growth',
+    title: 'WhatsApp Marketing',
     seo: {
       title:
         'Expert WhatsApp Marketing Services for Business Growth - Zoko World',
@@ -804,7 +804,7 @@ export const services: IServices[] = [
     status: 1,
     slug: 'Elevate Your Business with Impactful Email Marketing',
     image: '/images/services/digital_marketing_02.jpg',
-    title: 'Elevate Your Business with Impactful Email Marketing',
+    title: ' Email Marketing',
     seo: {
       title: 'Expert Email Marketing Services for Business Growth - Zoko World',
       description:
@@ -881,7 +881,7 @@ export const services: IServices[] = [
     slug: 'Create Seamless Experiences Across All Devices with Mobile-Responsive Design',
     image: '/images/services/web-design-technology-browsing-programming-concept.jpg',
     title:
-      'Create Seamless Experiences Across All Devices with Mobile-Responsive Design',
+      ' Mobile-Responsive Design',
     seo: {
       title: 'Expert Mobile-Responsive Design Services - Zoko World',
       description:

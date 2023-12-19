@@ -94,3 +94,19 @@ export const privacyPolicyMetaData: IMetaData[] = [
     canonicalUrl: getCanonical('/privacy-policy'),
   },
 ]
+
+export const refundPolicyMetaData: IMetaData[] = [
+  {
+    title: 'Refund Policy - Zoko World',
+    description:
+      'Zoko World\'s Refund Policy outlines our guidelines for refunds on purchases. Learn about eligibility, the refund request process, and non-refundable items.',
+    ogTitle: 'Refund Policy - Zoko World',
+    ogDescription:
+      'Zoko World\'s Refund Policy outlines our guidelines for refunds on purchases. Learn about eligibility, the refund request process, and non-refundable items.',
+    ogImage: '/images/refund-policy.jpg',
+    twitterCard: 'summary',
+    twitterSite: '@zokoworld',
+    twitterCreator: '@zokoworld',
+    canonicalUrl: getCanonical('/refund-policy'),
+  },
+]

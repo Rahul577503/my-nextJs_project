@@ -1,4 +1,4 @@
-$color_1: rgb(52, 52, 52);
+$color_1: rgb(165, 162, 162);
 $color_2: #fff;
 $color_3: rgb(255, 255, 255);
 
@@ -22,7 +22,7 @@ $color_3: rgb(255, 255, 255);
 .footerLink {
   color: $color_1;
   &:hover {
-    color: rgb(33, 33, 33);
+    color: rgb(249, 241, 241); 
   }
 }
 

@@ -13,7 +13,7 @@ export default function Copyright(props: Prop): JSX.Element {
       <Typography
         variant="body2"
         align="center"
-        color="#333"
+        color="#fff"
         {...props}
       >
         {'Copyright © '} {new Date().getFullYear()}{' '}

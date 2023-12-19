@@ -6,7 +6,7 @@ import Layout from '@/components/layout'
 import Image from 'next/image'
 import { privacyPolicyMetaData } from '@/constants/metaData'
 
-export default function Portfolio(): JSX.Element {
+export default function Privacy(): JSX.Element {
   const imageContainerStyle = {
     animation: 'moveUpDown 2s infinite alternate',
   }
@@ -75,7 +75,7 @@ export default function Portfolio(): JSX.Element {
   )
 }
 
-Portfolio.getLayout = function getLayout(page: React.ReactElement) {
+Privacy.getLayout = function getLayout(page: React.ReactElement) {
   return (
     <Layout>
       <Head>

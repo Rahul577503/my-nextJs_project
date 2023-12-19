@@ -16,7 +16,7 @@ import CloseIcon from '@mui/icons-material/Close'
 import { useTheme } from '@mui/material/styles'
 
 // import useMounted from '@/hooks/useMounted'
-// import Enquiry from '../Enquiry'
+import Enquiry from '../Enquiry'
 import { site } from '@/constants/common'
 import { getCookie, setCookie } from '@/utils/common'
 
@@ -78,12 +78,12 @@ export default function EnquiryModal() {
     >
       <BootstrapDialogTitle id="enquiry-dialog-title" onClose={handleClose} />
       <DialogContent>
-        {/* <Enquiry
+        <Enquiry
           width="100%"
           align="center"
           spacing={1}
           onSubmit={() => setOpen(false)}
-        /> */}
+        />
       </DialogContent>
 
       <DialogActions>

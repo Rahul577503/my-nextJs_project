@@ -1,8 +1,9 @@
-// import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React, { ReactNode } from 'react'
+import Image from 'next/image'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
 import IconButton from '@mui/material/IconButton'
@@ -21,7 +22,7 @@ import Drawer from '@mui/material/Drawer'
 import Footer from './Footer'
 import { navItems, site } from '@/constants/common'
 
-// const EnquiryModal = dynamic(() => import('./EnquiryModel'), { ssr: false })
+const EnquiryModal = dynamic(() => import('./EnquiryModel'), { ssr: false })
 
 type Props = {
   children?: ReactNode
@@ -39,7 +40,7 @@ const Layout = ({ children }: Props): JSX.Element => {
   const drawer = (
     <Box onClick={toggleDrawer} sx={{ textAlign: 'center' }}>
       <Link href="/">
-        <img
+        <Image
           src="/logo.png"
           alt={site.title}
           height="70"
@@ -84,7 +85,7 @@ const Layout = ({ children }: Props): JSX.Element => {
               sx={{ flexGrow: 1, display: { sm: 'block' } }}
             >
               <Link href="/">
-                <img
+                <Image
                   src="/logo.png"
                   alt={site.title}
                   height="70"
@@ -154,7 +155,7 @@ const Layout = ({ children }: Props): JSX.Element => {
           <Toolbar />
           {children}
           <Footer />
-          {/* <EnquiryModal /> */}
+          <EnquiryModal />
         </Box>
       </Box>
     </>

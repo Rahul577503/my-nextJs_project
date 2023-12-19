@@ -63,12 +63,12 @@ export const footerLinks: IFooterLinks[] = [
   {
     section: 'Our Services',
     links: [
-      { title: 'Website Designing', link: '/website-designing' },
+      { title: 'Website Designing', link: '' },
       { title: 'Website Development', link: '/website-development' },
       { title: 'Responsive Web Design', link: '/responsive-web-design' },
       { title: 'Website Maintenance', link: '/website-maintenance' },
       { title: 'Domain Registration', link: '/domain-registration' },
-      { title: 'Web Hosting', link: '/web-hosting' },
+      { title: 'Web Hosting', link: '/services/Reliable%20Hosting%20Solutions%20for%20Your%20Online%20Success' },
       { title: 'Android App Development', link: '/android-app-development' },
       { title: 'IOS App Development', link: '/ios-app-development' },
     ],

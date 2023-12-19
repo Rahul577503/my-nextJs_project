@@ -19,9 +19,8 @@ import Page from '@/components/wrappers/Page'
 import Row from '@/components/wrappers/Row'
 import Column from '@/components/wrappers/Column'
 import Background from '@/components/wrappers/Background'
-import {contacts, site } from '@/constants/common'
+import { contacts, site } from '@/constants/common'
 import Enquiry from '@/components/Enquiry'
-
 
 export default function Contact(): JSX.Element {
   return (
@@ -146,14 +145,15 @@ export default function Contact(): JSX.Element {
           <Background>
             <Grid container spacing={1} alignItems="stretch">
               <Grid item lg={12} md={12} sm={12} xs={12}>
-                <iframe
-                  width="100%"
-                  height="500"
-                  frameBorder="0"
-                  scrolling="no"
-                  id="gmap_canvas"
-                  src="https://maps.google.com/maps?width=1200&amp;height=400&amp;hl=en&amp;q=Noida%20Noida+(Haldiram)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                ></iframe>
+                <div style={{ width: '100%', height: '500px' }}>
+                  <iframe
+                    style={{ width: '100%', height: '100%', border: '0' }}
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?width=1200&amp;height=400&amp;hl=en&amp;q=Noida%20Noida+(Haldiram)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    allowFullScreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
               </Grid>
             </Grid>
           </Background>
